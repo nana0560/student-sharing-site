@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Sharing Platform - Quizzes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Student Platform</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ideas.html">Share Ideas</a></li>
+          <li class="nav-item"><a class="nav-link" href="questions.html">Solve Questions</a></li>
+          <li class="nav-item"><a class="nav-link" href="quizzes.html">Quizzes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container my-5">
+    <h2 class="text-center">Create and Take Quizzes</h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form id="quizForm">
+          <div class="mb-3">
+            <label for="quizTitle" class="form-label">Quiz Title</label>
+            <input type="text" class="form-control" id="quizTitle" placeholder="Enter quiz title">
+          </div>
+          <div class="mb-3">
+            <label for="quizQuestions" class="form-label">Questions</label>
+            <textarea class="form-control" id="quizQuestions" rows="5" placeholder="Add questions here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Quiz</button>
+        </form>
+
+        <!-- Quizzes List -->
+        <h3 class="mt-5">Available Quizzes</h3>
+        <ul id="quizzesList" class="list-group">
+          <!-- JavaScript will dynamically add quizzes here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
